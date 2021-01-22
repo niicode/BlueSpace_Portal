@@ -1,0 +1,110 @@
+body{
+  line-height: 1;
+  margin: 0;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+div.container div.row div.col-3 img.signup_image {
+  height: 350px;
+  object-fit: contain;
+  margin-left: 80px;
+}
+
+div.container div.row div.col-3 p.heading {
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+
+div.container div.row div.col-3 form p {
+  margin-top: 30px;
+}
+
+div.container div.row div.col-3 form input.checkbox {
+  margin-right: 5px;
+  /* margin-top: inherit; */
+}
+
+div.container div.row div.col-3 form input.main_input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(114, 121, 126, 0.712);
+  padding: 10px;
+}
+
+div.container div.row div.col-3 form button {
+  text-transform: uppercase;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  color: white;
+  background-color:rgb(74, 143, 189) ;
+  border: 1px solid;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+div.container div.row div.col-3 form button:hover {
+  background-color: rgb(46, 117, 165) 
+}
+
+div.experience_capture input.beginner{
+  padding-right: 5px;
+}
+
+
+@media screen and (max-width: 832px) {
+  div.container div.row div.col-3 img.signup_image {
+    height: 200px;
+    object-fit: contain;
+    margin-left: 0;
+  } 
+
+  div.container {
+    align-items: center;
+  }
+
+  div.row {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+}
